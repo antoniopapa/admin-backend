@@ -2,6 +2,8 @@ version: '3.7'
 services:
   frontend:
     image: antoniopapa1991/admin-frontend
+    ports:
+      - 8080:80
     depends_on:
       - backend
     networks:
